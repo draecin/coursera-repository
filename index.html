@@ -1,39 +1,145 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> HTML</title>
-<!-- this is head -->
-<link rel="stylesheet" href="mystyle.css">
+<header>
+<meta charset="UTF-8>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
+<title>Assignment 2</title>
 <style>
-  h1 {
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 50px;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: rgb(5, 92, 253);
+    }
+
+.topnav a
+{
+    display: block;
+    float: Left;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+
+}
+.topnav input[type=text]{
+    float: right;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+.article_main {
+    background-color: lightgrey;);
+    height: 850px;
+    width: 80%;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+}
+
+.side {
     background-color: gray;
-    width: 800px;
-    border: 1px solid black;
-  }
+    height: 850px;
+    width: 20%;
+    margin: 0;
+    float: right;
+}
+.video .description
+{
+    display: block;
+    float: left;
+    margin-top: 100px;
+    margin-left: 200px
+}
+.video
+{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+.description
+{
+    margin-top: 30px;
+    margin-left: 300px;
+    
+}
+.description h1{
+    font-size:  25px;
+}
+.description .song {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 900px;
+
+}
+
+.side {
+    display: flex;
+}
+.columns {
+    align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+footer {
+    font-size: 20px;
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+
 
 
 </style>
-
-
-<!-- this is head -->
-</head>
 <body>
-<!--  this is body -->
+<div class="topnav"> 
+        <a class="active" href="Home">Home</a>
+        <a href="#About">Contact</a>
+        <a href="#Contact">About</a>
+        <input type="text" placeholder="Joey pangit">
+</div>
 
-<h1> This is my first HTML Website </h1>
-<h2>Second inline External css </h2>
-<div style="color: black; font-size: 30px; background-color: gray; border: 1px solid black; width: 500px;"> This is my first paragraph</div>
-<strong>Second Inline</strong>
+<div class="mainbody1">
+    <article class="article_main">
+        <section><iframe class="video" width="900" height="400" src="https://www.youtube.com/embed/fuI0bEdoF30?si=EuQR2z2VXzVwMdIX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+        <section class="description"> 
+            <h1> NOTD Keep You Mine</h1>
+            <section class="song"> NOTD (pronounced "noted") is a Swedish musical production duo composed of Tobias Danielsson and Samuel Brandt.[2] They are best known for their songs "I Wanna Know" featuring Bea Miller and "So Close" with Felix Jaehn featuring Captain Cuts and Georgia Ku.</section>
+             <br>
+             <section class="song"> The duo met on SoundCloud and began creating remixes together before they found out they would be attending the same high school.[3] The duo chose the name NOTD by combining the last two letters of each of their last names and reversing them.[4]</section>
+             <br>
+             <section class="song"> Their remix of "Scars to Your Beautiful" by Alessia Cara was released in 2016.[5] A remix of "Dark Side" by Phoebe Ryan was released in 2017.[6] Their remix of STANAJ's "Romantic", which peaked at #91 in Australia (as "The Preview EP") was released on 27 January 2017.[7][8] Their remix of "There's Nothing Holdin' Me Back" by Shawn Mendes was released in May 2017. Their remix of "Shape of You" by Ed Sheeran received a nomination for an Electronic Music Award for Remix of the Year.[9] Also in 2017, they released a remix of "Wild Thoughts" by DJ Khaled and Rihanna, which appeared on Billboard's list of the best remixes of the song.[10] They released their debut single "Summer of Love" which features Norwegian singer Dagny on 11 August 2017.[11] In December 2017, they released a remix of "Tell Me You Love Me" by Demi Lovato.[12] They also produced a remix of Years & Years' song "If You're Over Me".[13]</section>
+        </section>
+    </article>
+    <aside class="side">
+        <div class="columns">
+        <img src="no1.jpeg" height="33.33%" width="100%">
+         <img src="no2.jpg"  height="33.33%" width="100%">
+        <img src="no3.webp"  height="32%" width="100%">
+    </div>
+  </aside>
+ 
+</div>
+<footer>
+    <p>Please Contact<br>
+    <a href="mailto:hege@example.com">JoeyDoge@gmail.com</a></p>
+  </footer>
 
-
-
-
-
-<!--  this is body -->
 </body>
+
+
+
+
+
+
+
+
+
+
+
 </html>
